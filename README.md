@@ -7,11 +7,12 @@ Generate a password wordlist from a set of usernames using ProxyNova's Comb API.
 Given a list of usernames, the tool will create a list of passwords that has been leaked by those passwords.
 
 > API: `curl https://api.proxynova.com/comb?query=`
-> 
-- 2 output option:
-    - A list of all passwords.
-    - A list of dictionaries with the username as key and list of passwords as value.
-- Usernames need to have the syntax `abcd_efgh-123` without using any other special chars.
+
+There are 2 output option:
+- A list of all passwords.
+- A list of dictionaries with the username as key and list of it's passwords as value.
+
+**Note**: Usernames need to have the syntax `abcd_efgh-123` without using any other special chars.
     
     > Should username input that has [space] converted into `_` or `-`?
 
